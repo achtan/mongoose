@@ -123,7 +123,6 @@ declare module 'mongoose' {
 
   interface RemoveOptions extends SessionOption, Omit<mongodb.DeleteOptions, 'session'> {}
 
-  const Model: Model<any>;
   interface Model<T, TQueryHelpers = {}, TMethodsAndOverrides = {}, TVirtuals = {}, TSchema = any> extends
     NodeJS.EventEmitter,
     AcceptsDiscriminator,
